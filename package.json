@@ -43,8 +43,5 @@
     "README.md",
     "LICENSE"
   ],
-  "type": "module",
-  "dependencies": {
-    "@typeweaver/json2ts": "file:"
-  }
+  "type": "module", 
 }
