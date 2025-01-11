@@ -46,6 +46,7 @@
   ],
   "type": "module",
   "publishConfig": {
-    "directory": "dist"
+    "directory": "dist",
+    "access": "public"
   }
 }
