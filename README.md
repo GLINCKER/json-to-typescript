@@ -1,5 +1,5 @@
 
-# JSON-to-TypeScript Converter
+# JSON-to-TypeScript Converter | @typeweaver/json2ts
 
 Convert JSON to TypeScript interfaces effortlessly.  
 An open-source tool for developers to generate TypeScript types from JSON objects quickly and securely.
@@ -101,15 +101,23 @@ If you want to enhance this project, please refer to the [CONTRIBUTING.md](CONTR
 
 ---
 
-## 📝 License
 
-This project is licensed under the [MIT License](LICENSE).
+## License
 
+This software is also available under the GLINR | GLINCKER LLC proprietary license. The proprietary license allows for use, modification, and distribution of the software with certain restrictions and conditions as set forth by GLINCKER LLC.
+
+You are free to use this software for reference and educational purposes. However, any commercial use, distribution, or modification outside the terms of the MIT License requires explicit permission from GLINCKER LLC. 
+
+By using the software in any form, you agree to adhere to the terms of both the MIT License and the GLINCKER LLC proprietary license, where applicable. If there is any conflict between the terms of the MIT License and the GLINCKER LLC proprietary license, the terms of the GLINCKER LLC proprietary license shall prevail.
+
+### MIT License
+
+@typewraper/json2ts is [MIT licensed](./LICENSE).
 ---
 
 ## 🌟 Acknowledgments
 
-- Developed by [Glincker](https://github.com/glincker).  
+- Developed by [Glincker](https ://github.com/glincker).  
 - Part of the **GLINR** ecosystem.
 
 ---
@@ -117,4 +125,4 @@ This project is licensed under the [MIT License](LICENSE).
 ## 📬 Feedback
 
 We’d love to hear from you!  
-Submit your ideas or suggestions via issues in the repository or join the discussion on the [GLINR Community](https://community.glinr.dev).
+Submit your ideas or suggestions via issues in the repository or join the discussion on the [GLINR Community](https://glincker.com).
