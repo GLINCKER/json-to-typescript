@@ -1,0 +1,50 @@
+{
+  "name": "@typeweaver/json2ts",
+  "version": "1.0.0",
+  "description": "Convert JSON to TypeScript interfaces effortlessly. An open-source tool for developers to generate TypeScript types from JSON objects quickly and securely.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "json",
+    "typescript",
+    "converter",
+    "typeweaver",
+    "json-to-typescript",
+    "typescript-interface"
+  ],
+  "author": "Glincker",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GLINCKER/json-to-typescript.git"
+  },
+  "bugs": {
+    "url": "https://github.com/GLINCKER/json-to-typescript/issues"
+  },
+  "homepage": "https://github.com/GLINCKER/json-to-typescript#readme",
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "@types/jest": "^29.5.14",
+    "babel-jest": "^29.7.0",
+    "chai": "^5.1.2",
+    "jest": "^29.7.0",
+    "mocha": "^11.0.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "type": "module",
+  "dependencies": {
+    "@typeweaver/json2ts": "file:"
+  }
+}
