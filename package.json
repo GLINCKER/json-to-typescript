@@ -1,6 +1,6 @@
 {
   "name": "@typeweaver/json2ts",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Convert JSON to TypeScript interfaces effortlessly. An open-source tool for developers to generate TypeScript types from JSON objects quickly and securely.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

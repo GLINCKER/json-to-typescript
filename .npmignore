@@ -1,6 +1,9 @@
-node_modules
-src
-test
-dist/test
+src/
+node_modules/
+*.test.*
+*.spec.*
 *.log
-*.tsbuildinfo
+*.md
+tsconfig.json
+.npmignore
+package-lock.json

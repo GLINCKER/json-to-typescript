@@ -35,12 +35,8 @@ jobs:
       - name: Build the package
         run: npm run build
 
-      # Prepare dist folder for publish
-      - name: Copy necessary files to dist
-        run: cp README.md LICENSE package.json dist/
-
       # Publish dist folder to npm
-      - name: Publish dist folder to npm
-        run: cd dist && npm publish --access public
+      - name: Publish to npm
+        run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
