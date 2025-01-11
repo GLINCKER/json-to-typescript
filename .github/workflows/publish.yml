@@ -36,11 +36,11 @@ jobs:
         run: npm run build
 
       # Prepare dist folder for publish
-      - name: Copy package.json to dist
-        run: cp package.json dist/
+      - name: Copy necessary files to dist
+        run: cp README.md LICENSE package.json dist/
 
       # Publish dist folder to npm
       - name: Publish dist folder to npm
-        run: cd dist && npm publish
+        run: npm publish --workspace dist
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
