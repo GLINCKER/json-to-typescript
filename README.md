@@ -10,37 +10,38 @@ An open-source tool for developers to generate TypeScript types from JSON object
 
 - **Fast Conversion**: Generate TypeScript interfaces from JSON in seconds.
 - **Nested Objects Support**: Handles deeply nested structures with ease.
+- **Array Depth Detection**: Automatically detects array depth and types.
+- **ISO Date Recognition**: Converts valid ISO date strings to `Date` type.
 - **Secure Offline Use**: No need to paste your data online—works locally.
-- **Customizable**: Future support for advanced type handling and customizations.
+- **Customizable Future Enhancements**: Support for advanced type handling and customizable options in future updates.
 
 ---
 
 ## 📦 Installation
 
-Install the package via NPM:
+You can install the package globally using any of these package managers:
 
+**Using NPM:**
 ```bash
 npm install -g @typeweaver/json2ts
+```
+
+**Using Yarn:**
+```bash
+yarn global add @typeweaver/json2ts
+```
+
+**Using PNPM:**
+```bash
+pnpm add -g @typeweaver/json2ts
 ```
 
 ---
 
 ## 🛠️ Usage
 
-### CLI
-Convert a JSON file to a TypeScript interface:
-
-```bash
-json2ts convert input.json output.ts
-```
-
-Or use JSON from the clipboard:
-
-```bash
-json2ts --clipboard
-```
-
 ### Programmatic API
+
 Import and use the package in your Node.js or TypeScript project:
 
 ```typescript
@@ -61,7 +62,7 @@ console.log(tsInterface);
 
 ## ✨ Example
 
-Input JSON:
+### Input JSON:
 ```json
 {
   "name": "John",
@@ -73,7 +74,7 @@ Input JSON:
 }
 ```
 
-Generated TypeScript Interface:
+### Generated TypeScript Interface:
 ```typescript
 interface Root {
   name: string;
@@ -89,14 +90,14 @@ interface Root {
 
 ## 📚 Documentation
 
-For detailed documentation and examples, visit the [project wiki](https://github.com/glincker/json-to-typescript/wiki).
+For more details, advanced examples, and troubleshooting, check the [project wiki](https://github.com/glincker/json-to-typescript/wiki).
 
 ---
 
 ## 🤝 Contributing
 
 We welcome contributions!  
-Please see the [CONTRIBUTING.md](CONTRIBUTING.md) file for guidelines.
+If you want to enhance this project, please refer to the [CONTRIBUTING.md](CONTRIBUTING.md) file for guidelines.
 
 ---
 
@@ -109,10 +110,11 @@ This project is licensed under the [MIT License](LICENSE).
 ## 🌟 Acknowledgments
 
 - Developed by [Glincker](https://github.com/glincker).  
-- Part of the **TypeWeaver** ecosystem.
+- Part of the **GLINR** ecosystem.
 
 ---
 
 ## 📬 Feedback
 
-Have ideas or suggestions? Create an issue in the repository or join the discussion on [GLINR Community](https://community.glinr.dev).
+We’d love to hear from you!  
+Submit your ideas or suggestions via issues in the repository or join the discussion on the [GLINR Community](https://community.glinr.dev).
