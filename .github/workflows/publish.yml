@@ -1,12 +1,10 @@
+# .github/workflows/publish.yml
 name: Publish to npm
 
 on:
   push:
     branches:
       - develop
-
-permissions:
-  contents: read
 
 jobs:
   build-and-publish:
@@ -22,6 +20,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: "18"
+          registry-url: "https://registry.npmjs.org"
           cache: "npm"
 
       # Install dependencies
