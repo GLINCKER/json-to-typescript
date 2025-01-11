@@ -1,0 +1,47 @@
+name: Publish to npm
+
+on:
+  push:
+    branches:
+      - develop
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout the repository
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Set up Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "18"
+          cache: "npm"
+
+      # Install dependencies
+      - name: Install dependencies
+        run: npm install
+
+      # Run tests (optional)
+      - name: Run tests
+        run: npm test
+
+      # Build the package
+      - name: Build the package
+        run: npm run build
+
+      # Prepare dist folder for publish
+      - name: Copy package.json to dist
+        run: cp package.json dist/
+
+      # Publish dist folder to npm
+      - name: Publish dist folder to npm
+        run: cd dist && npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
