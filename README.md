@@ -1,5 +1,6 @@
 
-# JSON-to-TypeScript Converter | @typeweaver/json2ts
+# JSON-to-TypeScript Converter
+## @typeweaver/json2ts
 
 Convert JSON to TypeScript interfaces effortlessly.  
 An open-source tool for developers to generate TypeScript types from JSON objects quickly and securely.
@@ -117,8 +118,9 @@ By using the software in any form, you agree to adhere to the terms of both the 
 
 ## 🌟 Acknowledgments
 
-- Developed by [Glincker](https ://github.com/glincker).  
+- Developed by [Glincker](https://github.com/glincker).  
 - Part of the **GLINR** ecosystem.
+- Managed by [TypeWeaver](https://typeweaver.com)
 
 ---
 
